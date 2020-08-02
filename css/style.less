@@ -1,0 +1,374 @@
+/* Base */ 
+body {
+	font-family: Lato;
+}
+
+.br0 {
+    border-radius: 0px !important;
+}
+
+.bg-none {
+	background: none;
+}
+
+
+
+
+
+/* Layout */
+.first-page {
+	padding: 0;
+	margin: 0;
+	background: url("../images/HERO.jpg") no-repeat;
+    background-size: cover; 
+    min-height: 100vh;
+
+	.header {
+		width: 70%;
+		padding: 40px 0;
+		background-color: none;
+
+		.menu-point {
+			padding: 10px 20px;
+			color: #fff;
+			font-family: Lato;
+			font-size: 14px;
+			text-transform: uppercase;
+
+			&:hover {
+				color: #383739;
+			}
+		}
+	}
+
+	.first-page-title {
+		color: #fff;
+		background: none;
+
+		h1 {
+			font-family: Raleway;
+			font-style: bold !important;
+			text-transform: capitalize;
+			font-size: 48px;
+		}
+
+		
+
+		p {
+			font-family: Lato;
+			font-size: 22px;
+			color: #fffefe;
+			width: 50%;
+			margin: 0 auto;
+
+			&:last-child a{
+				font-size: 18px;
+				padding: 20px 50px;
+				border-radius: 2px;
+			}
+		}
+
+		.down {
+			position: absolute;
+		    bottom: 0;
+		    left: 48.5%;
+		    right: 0;
+		    top: 85%; 
+		    transition: 0.15s linear;
+		}
+
+		.down:active {
+			transform: rotate(-180deg);
+		    -webkit-transform: rotate(-180deg);
+		    -o-transform: rotate(-180deg);
+		    -moz-transform: rotate(-180deg);
+		}
+
+		.down:visited{
+			transform: rotate(-180deg);
+		    -webkit-transform: rotate(-180deg);
+		    -o-transform: rotate(-180deg);
+		    -moz-transform: rotate(-180deg);
+		}
+	}
+}
+
+.services {
+	padding: 110px 0;
+
+	.service {
+		padding: 0;
+		width: 32%;
+		display: inline-block;
+	    float: none;
+		vertical-align: bottom;
+
+		p{
+			font-size: 16px;
+		}
+	}
+}
+
+.dolore {
+	background: url("../images/third.jpg") no-repeat;
+    background-size: cover; 
+    padding-bottom: 0;
+    position: relative;
+
+    .dolore-magna {
+    	color: #fff;
+    	text-align: left;
+    	margin-bottom: 0;
+    	padding-bottom: 0;
+
+    	h1 {
+    		font-family: Lato;
+    		font-size: 45px;
+    		text-transform: uppercase;
+    	}
+
+    	p{
+    		color: #979797;
+    		font-size: 22px;
+    	}
+
+    	.image {
+    		height: 425px;
+    		width: 257px;
+    		position: absolute;
+    		bottom: 0;
+    		right: 100;
+    	}
+
+    	a{
+    		text-decoration: underline;
+    		color: #fff;
+    		font-size: 18px;
+    		font-family: Lato;
+    		margin-bottom: 100px;
+    	}
+    }
+}
+
+.our-work {
+	padding: 110px 0;
+
+	.works {
+		padding: 0;
+
+		.single-work {
+			padding: 0;
+			height: auto;
+			width: 32%;
+			position: relative;
+			font-size: 0;
+
+
+			&:hover {
+				font-size: 1rem;
+
+				.link {
+					p:after {
+						content: url("../images/Link 1.png");
+					}
+				}
+
+				.link-background {
+					background: url("../images/Rectangle.png");
+					background-size: cover;			
+				}	
+			}
+
+			&:first-child{
+				background: url("../images/Layer 17.jpg") 100%;
+				background-size: cover;
+				margin-right: 2%;
+			}
+
+			&:nth-child(2) {
+				background: url("../images/Layer 16.jpg") 100%;
+				background-size: cover;				
+			}
+
+			&:last-child {
+				background: url("../images/Layer 21.jpg") 100%;
+				background-size: cover;	
+				margin-left: 2%;
+			}
+
+			.link-background {
+				height: 420px;
+
+				.link {
+					position: absolute;
+				    top: 40%;
+				    left: 25%;
+				    color: #fff !important;
+
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		.more {
+			text-transform: uppercase;
+			font-family: Lato;
+			font-size: 24px;
+			width: 32.7%;
+			margin: 0 auto;
+			border: 2px solid #222222;
+			color: #222222;
+			padding: 10px;
+			margin-top: 80px;
+		}
+	}
+}
+
+.get-in-touch {
+	padding: 110px 0;
+	background: url("../images/bg.jpg");
+	background-size: cover;
+
+	.titles {
+		color: #fff;
+	}
+
+	.icons {
+		color: #fff;
+		font-size: 3rem;
+
+		i:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+
+	.touch {
+
+		form {
+			width: 100%;
+			padding-top: 75px;
+
+			.name {
+				padding-right: 65px;
+			}
+
+			.email {
+				float: right;
+			}
+
+			.name, .email {
+				padding: 0;
+				margin: 0;
+				width: 45%;
+
+
+				input {
+					width: 90%;
+					margin-bottom: 90px;
+
+					&::-webkit-input-placeholder {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}
+					&::-moz-placeholder          {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}/* Firefox 19+ */
+					&:-moz-placeholder           {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}/* Firefox 18- */
+					&:-ms-input-placeholder      {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}
+				}
+
+				input:last-child {
+					width: 100%;
+				}
+			}
+
+			.send {
+				text-transform: uppercase;
+				font-family: Lato;
+				font-size: 24px;
+				width: 20%;
+				margin: 0 auto;
+				border: 2px solid #fff;
+				color: #fff;
+				padding: 10px;
+				margin-top: 80px;
+			}
+
+			input {
+					height: 50px;
+					padding: 15px;
+					background-color: transparent; 
+					border: 0;
+					border-bottom: 3px solid #afafaf;
+
+					&:focus { 
+						outline: none; 
+					}
+
+					&::-webkit-input-placeholder {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}
+					&::-moz-placeholder          {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}/* Firefox 19+ */
+					&:-moz-placeholder           {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}/* Firefox 18- */
+					&:-ms-input-placeholder      {font-style: italic;
+						font-size: 18px;
+						font-family: Lato;}
+				}
+
+			
+		}
+	}
+}
+
+
+
+
+/* Modules */
+
+hr {
+	width: 5vw;
+	size: 3px;
+    border-top: 2px solid #eeeeee;
+    margin: 75px auto;
+
+    &.black {
+    	border-top: 2px solid #222222;
+    }
+}
+
+.titles {
+	h2 {
+		font-family: Montserrat;
+		font-style: bold;
+		text-transform: uppercase;
+		font-size: 40px;
+	}
+
+	p {
+		font-family: Droid Serif;
+		font-style: italic;
+		font-size: 16px;
+	}
+}
+
+
+h4 {
+	font-size: 24px;
+	margin: 35px 0;
+}
+
+h3 {
+	color: #fff;
+	font-family: Lato;
+	font-size: 22px;
+	text-transform: uppercase;
+}
